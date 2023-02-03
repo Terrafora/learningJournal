@@ -1,0 +1,8 @@
+.top-of-page{
+    display: grid;
+    grid-row: 10vh 90vh;
+    grid-template:
+        ".title navigation."
+        ".main-article main-article.";
+    
+}
