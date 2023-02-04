@@ -1,17 +1,21 @@
 * {
     margin: 0;
-    font-family:
+    font-family: 'Roboto', sans-serif;
 }
 
-.top-of-page{
+body{
+        background-color: whitesmoke;
+}
+
+/* Styling for top part of page including navigation, title and main article*/
+
+.top-of-page {
     position: fixed;
     display: grid;
     grid-row: 10vh 90vh;
     grid-template:
         "title title . navigation"
         "main-article main-article main-article main-article";
-    background-color: whitesmoke;
-    
 }
 
 .title {
@@ -33,6 +37,7 @@
 .main-article {
     grid-area: main-article;
     color: midnightblue;
+    cursor: pointer;
 }
 
 .main-article img {
@@ -46,8 +51,19 @@
 .main-article-text {
     position: absolute;
     color: whitesmoke;
-    bottom: 1em;
-    left: 1em;
-    max-width: 450px;
-    font: 1.1rem
+    bottom: 1.5em;
+    left: 1.5em;
+    max-width: 436px;
+    font: 1.1rem;
+    background-color: rgba(54,69,79,0.5);
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 5px 5px;
 }
+
+.main-article-text:hover {
+    background-color: rgb(255,255,0);
+    color: rgb(0, 0, 0);
+}
+
+/* Article list below main article and navigation */
