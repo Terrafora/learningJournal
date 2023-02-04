@@ -1,8 +1,24 @@
 .top-of-page{
     display: grid;
+    gap: 1em;
     grid-row: 10vh 90vh;
     grid-template:
-        ".title navigation."
-        ".main-article main-article.";
+        ". title navigation ."
+        ". main-article main-article .";
     
+}
+
+.title {
+    grid-area: title;
+    align-content: start;
+}
+
+.navigation {
+    grid-area: navigation;
+    align-content: end;
+    justify-content: end;
+}
+
+.main-article {
+    grid-area: main-article
 }
