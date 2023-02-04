@@ -1,24 +1,53 @@
+* {
+    margin: 0;
+    font-family:
+}
+
 .top-of-page{
+    position: fixed;
     display: grid;
-    gap: 1em;
     grid-row: 10vh 90vh;
     grid-template:
-        ". title navigation ."
-        ". main-article main-article .";
+        "title title . navigation"
+        "main-article main-article main-article main-article";
+    background-color: whitesmoke;
     
 }
 
 .title {
     grid-area: title;
-    align-content: start;
+    align-self: start;
 }
 
 .navigation {
     grid-area: navigation;
-    align-content: end;
-    justify-content: end;
+    justify-self: end;
+    align-self: center;
+}
+
+.title,
+.navigation {
+    padding: 1.25rem;
 }
 
 .main-article {
-    grid-area: main-article
+    grid-area: main-article;
+    color: midnightblue;
+}
+
+.main-article img {
+    position: relative;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    min-width: 400px;
+}
+
+.main-article-text {
+    position: absolute;
+    color: whitesmoke;
+    bottom: 1em;
+    left: 1em;
+    max-width: 450px;
+    font: 1.1rem
 }
